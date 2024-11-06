@@ -1,0 +1,76 @@
+#Customer Segmantation with Clustering 
+
+
+---
+
+### **Customer Segmentation with Clustering**
+
+In this project, I used unsupervised machine learning techniques to perform customer segmentation based on purchasing behavior. The goal was to divide customers into distinct segments using the K-Means clustering algorithm. These segments can help businesses identify patterns, tailor marketing strategies, optimize sales approaches, and improve customer retention.
+
+---
+
+#### **Dataset:**
+The dataset used for this analysis includes the following columns:
+- **Customer ID**: Unique identifier for each customer.
+- **Age**: The age of the customer.
+- **Annual Income (k$)**: Annual income of the customer in thousands of dollars.
+- **Spending Score (1-100)**: A score assigned to customers based on their purchasing behavior and loyalty to the brand.
+
+---
+
+#### **Key Features of the Project:**
+- **Data Cleaning**: The data was preprocessed to handle missing values and outliers, ensuring it was ready for clustering.
+- **Clustering Algorithm**: I applied the K-Means clustering algorithm to group customers into different segments. The clustering was done based on the customers' annual income, spending score, and age.
+- **Visualization**: I used PCA (Principal Component Analysis) to reduce the data's dimensionality and visualize the clusters in 2D space. The clusters were further analyzed and visualized based on the distribution of income and spending score.
+
+---
+
+#### **Project Structure:**
+
+- **data/**: Contains the customer dataset (`customer_data.csv`).
+- **scripts/**: Contains the following Python scripts:
+  - `data_cleaning.py`: Handles data cleaning and preprocessing steps.
+  - `clustering.py`: Implements the K-Means clustering algorithm and visualizes the results using PCA.
+  - `visualize_clusters.py`: Visualizes the distribution of customers within the clusters, including income and spending score comparisons.
+- **README.md**: A guide to understanding the project, setup, and usage instructions.
+- **requirements.txt**: Lists all the required Python dependencies (e.g., pandas, scikit-learn, matplotlib, seaborn).
+
+---
+
+#### **Steps to Run the Project:**
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/yourusername/customer-segmentation.git
+    cd customer-segmentation
+    ```
+
+2. **Install the dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3. **Run the clustering script to perform customer segmentation:**
+    ```bash
+    python scripts/clustering.py
+    ```
+
+4. **(Optional)** To visualize the customer distribution across the clusters:
+    ```bash
+    python scripts/visualize_clusters.py
+    ```
+
+---
+
+#### **Technologies Used:**
+- **Python**: The main programming language.
+- **pandas**: For data manipulation, cleaning, and preparation.
+- **scikit-learn**: For implementing the K-Means clustering algorithm and standardizing the features.
+- **matplotlib and seaborn**: For creating visualizations of the clustering results.
+
+---
+
+#### **Conclusion:**
+This project demonstrates how customer segmentation can be performed using clustering techniques. By dividing customers into different groups, businesses can better understand customer behavior and tailor marketing strategies to specific segments. These insights can lead to more effective business strategies, increased customer satisfaction, and optimized sales efforts.
+
+---
+
